@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animation</title>
+    <style>
+      .loading {
+        text-align: center;
+      }
+      a {
+        background-color: blue;
+        border-radius: 50%;
+        display: inline-block;
+        padding: 25px;
+        text-transform: uppercase;
+        color: white;
+        position: relative;
+        margin-top: 30vmax;
+        font-size: 2rem;
+        animation: bouncing 0.5s ease 0s infinite alternate both;
+      }
+      @keyframes bouncing {
+        0% {
+          bottom: 0;
+          box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+        }
+        100% {
+          bottom: 50px;
+          box-shadow: 0 50px 50px rgba(0, 0, 0, 0.1);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="loading">
+      <a>loading</a>
+    </div>
+  </body>
+</html>
